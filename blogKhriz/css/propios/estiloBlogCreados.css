@@ -1,0 +1,339 @@
+/*
+creado por:
+
+@khrizenriquez Khriz Enriquez 20/07/2013 20:32 horas
+*/
+/*importando archivos importantes*/
+@import url('../normalize.css');
+@import url('../bootstrap.min.css');
+@import url('../bootstrap-responsive.min.css');
+@import url('../elusive/elusive-webfont.css');
+/*importando archivos importantes*/
+/*atributos creados por mi*/
+/*-----------------------------------------------------afectando selectores universales*/
+body
+{
+	background: #0697DB;
+	font-size: 16px;
+	padding: 0.5%;
+	text-align: center;
+}
+h2
+{
+	color: #fffffa;
+	text-align: center;
+}
+h3
+{
+	text-align: center;
+}
+html
+{
+	background: #0697DB;
+	text-align: center;
+}
+/*-----------------------------------------------------afectando selectores universales*/
+
+/*-----------------------------------------------------afectando selectores por id*/
+#btnActualizarPost, #btnEliminarPost
+{
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+	width: 20%;
+}
+#divContenedorPost
+{
+	background: #BED3C4;
+	border-radius: 0em 0em 0.5em 0.5em;
+	margin: auto;
+	padding: 0em;
+	text-align: center;
+	overflow: hidden;
+	width: 70%;
+}
+#divTituloPosts
+{
+	background: #202020;
+	padding: 0.5em;
+	vertical-align: top;
+}
+#divTituloPosts figure
+{
+	width: 8%;
+}
+#divTituloPosts figure, h2
+{
+	display: inline-block;
+	vertical-align: top;
+}
+#lblPieDesarrollador
+{
+	color: #fffffa;
+	font-size: 16px;
+}
+#lblPieDesarrollador a
+{
+	color: #fffffa;
+}
+#lblTituloPost, #lblContenidoPost
+{
+	text-align: left;
+}
+#lblTituloPost, #lblContenidoPost, #txtAreaContenidoPost, #txtTituloPost, #btnActualizarPost, #btnEliminarPost
+{
+	font-size: 18px;
+}
+/*-----------------------------------------------------afectando selectores por id*/
+
+/*-----------------------------------------------------afectando selectores de clase*/
+
+/*-----------------------------------------------------afectando selectores de clase*/
+
+/*----------------------------------------------------media querys*/
+@media (min-width: 800px) and (max-width: 979px)
+{
+	body
+	{
+		background: #0697DB;
+		font-size: 16px;
+		padding: 0.5%;
+		text-align: center;
+	}
+	h2
+	{
+		color: #fffffa;
+		text-align: center;
+	}
+	h3
+	{
+		text-align: center;
+	}
+	html
+	{
+		background: #0697DB;
+		text-align: center;
+	}
+	/*-----------------------------------------------------afectando selectores universales*/
+
+	/*-----------------------------------------------------afectando selectores por id*/
+	#btnActualizarPost, #btnEliminarPost
+	{
+		margin: auto;
+		display: inline-block;
+		text-align: center;
+		width: 20%;
+	}
+	#divContenedorPost
+	{
+		background: #BED3C4;
+		border-radius: 0em 0em 0.5em 0.5em;
+		margin: auto;
+		padding: 0em;
+		text-align: center;
+		overflow: hidden;
+		width: 70%;
+	}
+	#divTituloPosts
+	{
+		background: #202020;
+		padding: 0.5em;
+		vertical-align: top;
+	}
+	#divTituloPosts figure
+	{
+		width: 8%;
+	}
+	#divTituloPosts figure, h2
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+	#lblPieDesarrollador
+	{
+		color: #fffffa;
+		font-size: 16px;
+	}
+	#lblPieDesarrollador a
+	{
+		color: #fffffa;
+	}
+	#lblTituloPost, #lblContenidoPost
+	{
+		text-align: left;
+	}
+	#lblTituloPost, #lblContenidoPost, #txtAreaContenidoPost, #txtTituloPost, #btnActualizarPost, #btnEliminarPost
+	{
+		font-size: 18px;
+	}
+	/*-----------------------------------------------------afectando selectores por id*/
+
+	/*-----------------------------------------------------afectando selectores de clase*/
+
+	/*-----------------------------------------------------afectando selectores de clase*/
+}
+@media (min-width: 600px) and (max-width: 800px)
+{
+	body
+	{
+		background: #0697DB;
+		font-size: 16px;
+		padding: 0.5%;
+		text-align: center;
+	}
+	h2
+	{
+		color: #fffffa;
+		text-align: center;
+	}
+	h3
+	{
+		text-align: center;
+	}
+	html
+	{
+		background: #0697DB;
+		text-align: center;
+	}
+	/*-----------------------------------------------------afectando selectores universales*/
+
+	/*-----------------------------------------------------afectando selectores por id*/
+	#btnActualizarPost, #btnEliminarPost
+	{
+		margin: auto;
+		display: inline-block;
+		text-align: center;
+		width: 20%;
+	}
+	#divContenedorPost
+	{
+		background: #BED3C4;
+		border-radius: 0em 0em 0.5em 0.5em;
+		margin: auto;
+		padding: 0em;
+		text-align: center;
+		overflow: hidden;
+		width: 70%;
+	}
+	#divTituloPosts
+	{
+		background: #202020;
+		padding: 0.5em;
+		vertical-align: top;
+	}
+	#divTituloPosts figure
+	{
+		width: 8%;
+	}
+	#divTituloPosts figure, h2
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+	#lblPieDesarrollador
+	{
+		color: #fffffa;
+		font-size: 16px;
+	}
+	#lblPieDesarrollador a
+	{
+		color: #fffffa;
+	}
+	#lblTituloPost, #lblContenidoPost
+	{
+		text-align: left;
+	}
+	#lblTituloPost, #lblContenidoPost, #txtAreaContenidoPost, #txtTituloPost, #btnActualizarPost, #btnEliminarPost
+	{
+		font-size: 18px;
+	}
+	/*-----------------------------------------------------afectando selectores por id*/
+
+	/*-----------------------------------------------------afectando selectores de clase*/
+
+	/*-----------------------------------------------------afectando selectores de clase*/
+}
+@media (max-width: 600px)
+{
+	body
+	{
+		background: #0697DB;
+		font-size: 16px;
+		padding: 0.5%;
+		text-align: center;
+	}
+	h2
+	{
+		color: #fffffa;
+		text-align: center;
+	}
+	h3
+	{
+		text-align: center;
+	}
+	html
+	{
+		background: #0697DB;
+		text-align: center;
+	}
+	/*-----------------------------------------------------afectando selectores universales*/
+
+	/*-----------------------------------------------------afectando selectores por id*/
+	#btnActualizarPost, #btnEliminarPost
+	{
+		margin: auto;
+		display: block;
+		text-align: center;
+		width: 70%;
+	}
+	#divContenedorPost
+	{
+		background: #BED3C4;
+		border-radius: 0em 0em 0.5em 0.5em;
+		margin: auto;
+		padding: 0em;
+		text-align: center;
+		overflow: hidden;
+		width: 90%;
+	}
+	#divTituloPosts
+	{
+		background: #202020;
+		padding: 0.5em;
+		vertical-align: top;
+	}
+	#divTituloPosts figure
+	{
+		width: 20%;
+	}
+	#divTituloPosts figure, h2
+	{
+		display: inline-block;
+		vertical-align: top;
+	}
+	#lblPieDesarrollador
+	{
+		color: #fffffa;
+		font-size: 16px;
+	}
+	#lblPieDesarrollador a
+	{
+		color: #fffffa;
+	}
+	#lblTituloPost, #lblContenidoPost
+	{
+		text-align: left;
+	}
+	#lblTituloPost, #lblContenidoPost, #txtAreaContenidoPost, #txtTituloPost, #btnActualizarPost, #btnEliminarPost
+	{
+		font-size: 18px;
+	}
+	/*-----------------------------------------------------afectando selectores por id*/
+
+	/*-----------------------------------------------------afectando selectores de clase*/
+
+	/*-----------------------------------------------------afectando selectores de clase*/
+}
+/*----------------------------------------------------media querys*/
+
+/*atributos creados por mi*/
