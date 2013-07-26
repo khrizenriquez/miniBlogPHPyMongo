@@ -26,11 +26,23 @@ h2
 }
 h3
 {
-	text-align: center;
+	text-align: left;
 }
 html
 {
 	background: #0697DB;
+	text-align: center;
+}
+nav, #divContenedorBlogsHechos
+{
+	display: block;
+	text-align: center;
+	vertical-align: top;
+}
+nav div
+{
+	display: inline-block;
+	margin: auto;
 	text-align: center;
 }
 p
@@ -86,6 +98,7 @@ p a:hover
 {
 	background: #202020;
 	padding: 0.5em;
+	text-align: center;
 	vertical-align: top;
 }
 #divTituloComentarios figure
@@ -95,6 +108,7 @@ p a:hover
 #divTituloComentarios figure, h2
 {
 	display: inline-block;
+	text-align: center;
 	vertical-align: top;
 }
 #divTituloPosts
@@ -300,7 +314,7 @@ p a:hover
 		padding: 0em;
 		text-align: left;
 		/*transform: skew(2deg, 2deg);*/
-		width: 90%;
+		width: 100%;
 	}
 	#divContenedorBlogsHechos
 	{
@@ -309,7 +323,11 @@ p a:hover
 		margin: 2% auto auto auto;
 		padding: 0em;
 		text-align: left;
-		width: 90%;
+		width: 100%;
+	}
+	#divContenedorBlogsHechos p
+	{
+		text-align: justify;
 	}
 	#divContenedorBlogsHechos, #divPublicarBlogDerecha
 	{

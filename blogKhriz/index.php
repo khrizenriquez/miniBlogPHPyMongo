@@ -67,12 +67,25 @@ switch ($accion)
 
 				<?php
 				require_once 'class/instrucciones.php';
-				$instrucciones = new instruccionesBD();
 
+				$instruccionesCondicionado = new instruccionesBD();
+				$mostrandoCondicionado = $instruccionesCondicionado->mostrandoValoresCondicionado('estado', 'activo');
+
+				//--------------------------creando paginacion
+                $articulosPorPagina = 3;//variable q contiene la cantidad de articulos que usare por cada pagina
+				$paginaActual = (isset($_GET['page'])) ? (int) $_GET['page'] : 1;
+				$skip = ($paginaActual - 1) * $articulosPorPagina;//variable que llevara la cuenta de cuantas paginas debere mostrar
+				$mostrandoCondicionado->sort(array('fechaGuardado' => 1))->skip($skip)->limit($articulosPorPagina);//sort es para ordenarlo -1 de manera descendente, 1 de manera ascendente
+				$totalArticulos = $mostrandoCondicionado->count();//cuento la cantidad de valores que trae $mostrandoCondicionado
+				$paginasTotal = (int) ceil($totalArticulos / $articulosPorPagina);
+				//--------------------------creando paginacion
+
+				$instrucciones = new instruccionesBD();
 				$mostrando = $instrucciones->mostrandoValores();
-				while ($mostrando->hasNext())
+
+				while ($mostrandoCondicionado->hasNext())
                 {
-                	$articulo = $mostrando->getNext();
+                	$articulo = $mostrandoCondicionado->getNext();
                 	if(@$articulo['estado'] == 'activo')//si esta activo no lo han borrado "aparentemente"
                 	{
 				?>
@@ -87,10 +100,48 @@ switch ($accion)
 				}
 				?>
 
+				<nav>
+					<div id='divPreview' class='pagination pagination-large'>
+						<?php 
+						if($paginaActual !== 1)
+						{
+						?>
+						<ul>
+							<li>
+								<a href="<?php print $_SERVER['PHP_SELF']. '?page='. ($paginaActual - 1); ?>" title="Anterior">&laquo;</a>
+							</li>
+						</ul>
+						<?php
+						} 
+						?>
+					</div>
+					<div id='divNoPagina' class='pagination pagination-large'>
+						<ul>
+							<li>
+								<a href="#" title="Pagina actual"><?php print $paginaActual; ?></a>
+							</li>
+						</ul>
+					</div>
+					<div id='divSiguiente' class='pagination pagination-large'>
+						<?php 
+						if($paginaActual !== $paginasTotal)
+						{
+						?>
+						<ul>
+							<li>
+								<a href="<?php print $_SERVER['PHP_SELF']. '?page='. ($paginaActual + 1); ?>" title="Anterior">&raquo;</a>
+							</li>
+						</ul>
+						<?php
+						} 
+						?>
+					</div>
+				</nav>
+
 			</div>
 		</section>
 
-		<footer>
+		<footer class='navbar navbar-fixed-bottom'>
 			<label id='lblPieDesarrollador'>Desarrollador por <a href="https:www.twitter.com/khrizenriquez">@khrizenriquez</a> </label>
 		</footer>
 

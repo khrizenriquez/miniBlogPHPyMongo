@@ -259,7 +259,7 @@ html
 	{
 		background: #0697DB;
 		font-size: 16px;
-		padding: 0.5%;
+		padding: 0%;
 		text-align: center;
 	}
 	h2
@@ -294,7 +294,7 @@ html
 		padding: 0em;
 		text-align: center;
 		overflow: hidden;
-		width: 90%;
+		width: 100%;
 	}
 	#divTituloPosts
 	{

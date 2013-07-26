@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='es-mx'>
 	<head>
-		<!--[if lte IE 7]><script src="js/elusive/lte-ie7.js"></script><![endif]--> 
+		<!--[if lte IE 7]><script src="js/elusive/lte-ie7.js"></script><![endif]-->
 		<meta http-equiv='Content-type' content="text/html; charset='UTF-8'" />
 		<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1' />
 		<link rel="stylesheet" href="css/propios/estiloBlogCreados.css" />
@@ -40,7 +40,7 @@
 			
 		</section>
 
-		<footer>
+		<footer class='navbar navbar-fixed-bottom'>
 			<label id='lblPieDesarrollador'>Desarrollador por <a href="https:www.twitter.com/khrizenriquez">@khrizenriquez</a> </label>
 		</footer>
 

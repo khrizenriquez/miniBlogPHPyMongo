@@ -20,6 +20,15 @@ class instruccionesBD
 	}
 	//-----------------metodo para hacer una seleccion de todo lo que esta en la base de datos
 
+	//-----------------metodo para hacer las busquedas condicionando
+	function mostrandoValoresCondicionado($valorMandado, $ordenarPor)
+	{
+		$mostrandoCondicionado = Conectandome::conectarme($this->nombreBD, $this->nombreColeccion);
+
+		return $mostrandoCondicionado->find(array($valorMandado => $ordenarPor));//con el find obtengo los valores que estan en la base de datos
+	}
+	//-----------------metodo para hacer las busquedas condicionando
+
 	//si quisiera devolver unicamente un valor utilizare este metodo, mando 2 parametros, el primero sera la manera que quiero buscar en mi bd, el segundo valor sera el parametro que le enviare para la busqueda
 	function mostrandoUnValor($buscarPor, $valorMandado)
 	{
